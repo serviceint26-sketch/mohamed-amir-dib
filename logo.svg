@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+
+<defs>
+<linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#FFD700"/>
+<stop offset="100%" stop-color="#C89B3C"/>
+</linearGradient>
+</defs>
+
+<circle cx="150" cy="150" r="85" fill="none" stroke="url(#gold)" stroke-width="10"/>
+
+<ellipse cx="150" cy="150" rx="130" ry="45"
+fill="none"
+stroke="url(#gold)"
+stroke-width="8"/>
+
+<text x="150"
+y="165"
+font-size="72"
+font-family="Arial"
+font-weight="bold"
+text-anchor="middle"
+fill="url(#gold)">J</text>
+
+</svg>
