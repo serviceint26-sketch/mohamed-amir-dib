@@ -1,225 +1,210 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0d0d0d;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:30px;
+    background:linear-gradient(135deg,#0b0b0b,#1a1a1a);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
 }
 
 .container{
-width:100%;
-display:flex;
-justify-content:center;
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
 
 .card{
-
-width:380px;
-
-background:#151515;
-
-border-radius:25px;
-
-padding:35px;
-
-box-shadow:0 0 40px rgba(255,193,7,.25);
-
-border:1px solid rgba(255,193,7,.25);
-
-text-align:center;
-
-animation:fade .8s;
-
+    width:390px;
+    background:#151515;
+    border-radius:25px;
+    padding:35px;
+    border:1px solid rgba(246,195,67,.30);
+    box-shadow:0 20px 60px rgba(0,0,0,.60);
+    text-align:center;
+    animation:fade .8s ease;
 }
 
 @keyframes fade{
-
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
-to{
+/* Logo */
 
-opacity:1;
-
-transform:translateY(0);
-
-}
-
+.company-logo{
+    width:90px;
+    height:auto;
+    margin-bottom:15px;
 }
 
 .logo h1{
-
-color:#f6c343;
-
-font-size:34px;
-
-letter-spacing:2px;
-
+    color:#f6c343;
+    font-size:32px;
+    letter-spacing:2px;
 }
 
 .logo p{
-
-color:#ddd;
-
-font-size:12px;
-
-margin-top:8px;
-
-margin-bottom:25px;
-
+    color:#d5d5d5;
+    font-size:12px;
+    margin-top:8px;
+    margin-bottom:25px;
+    letter-spacing:1px;
 }
 
+/* Profile */
+
 .profile img{
-
-width:150px;
-
-height:150px;
-
-border-radius:50%;
-
-border:5px solid #f6c343;
-
-object-fit:cover;
-
-margin-bottom:20px;
-
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #f6c343;
+    box-shadow:0 0 25px rgba(246,195,67,.35);
+    margin-bottom:18px;
 }
 
 .profile h2{
-
-color:white;
-
-font-size:26px;
-
+    color:#fff;
+    font-size:27px;
 }
 
 .profile h3{
-
-font-weight:400;
-
-color:#f6c343;
-
-margin-top:8px;
-
-margin-bottom:30px;
-
+    color:#f6c343;
+    font-size:17px;
+    font-weight:400;
+    margin-top:8px;
+    margin-bottom:30px;
 }
 
+/* Buttons */
+
 .buttons{
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
 .btn{
+    text-decoration:none;
+    color:#fff;
+    padding:16px;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    transition:.30s;
+}
 
-text-decoration:none;
-
-padding:16px;
-
-border-radius:12px;
-
-font-size:18px;
-
-font-weight:600;
-
-transition:.3s;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:12px;
-
-color:white;
-
+.btn i{
+    font-size:20px;
 }
 
 .phone{
-
-background:#0077ff;
-
+    background:#1877F2;
 }
 
 .whatsapp{
-
-background:#25D366;
-
+    background:#25D366;
 }
 
 .email{
-
-background:#d44638;
-
+    background:#d44638;
 }
 
 .tiktok{
-
-background:#000;
-
-border:1px solid #fff;
-
+    background:#000;
+    border:1px solid #fff;
 }
 
 .wechat{
-
-background:#09b83e;
-
+    background:#09b83e;
 }
 
 .btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
 
-transform:scale(1.05);
+/* WeChat */
 
+.wechat{
+    margin-top:20px;
+}
+
+.wechat h3{
+    color:#ffffff;
+    margin-bottom:15px;
 }
 
 .wechat img{
-
-margin-top:25px;
-
-width:210px;
-
-border-radius:15px;
-
-border:4px solid white;
-
+    width:220px;
+    max-width:100%;
+    border-radius:15px;
+    border:4px solid #ffffff;
+    margin-top:10px;
 }
 
 .wechat p{
-
-color:white;
-
-margin-top:10px;
-
-font-size:18px;
-
+    color:#ffffff;
+    font-size:18px;
+    margin-top:10px;
+    font-weight:500;
 }
 
 footer{
+    margin-top:30px;
+    color:#9a9a9a;
+    font-size:13px;
+    letter-spacing:1px;
+}
 
-margin-top:30px;
+/* Responsive */
 
-color:#888;
+@media(max-width:480px){
 
-font-size:13px;
+    body{
+        padding:15px;
+    }
+
+    .card{
+        width:100%;
+        padding:25px;
+    }
+
+    .profile img{
+        width:130px;
+        height:130px;
+    }
+
+    .profile h2{
+        font-size:23px;
+    }
+
+    .btn{
+        font-size:16px;
+        padding:15px;
+    }
+
+    .wechat img{
+        width:190px;
+    }
+
+}
 
 }
